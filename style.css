@@ -1,0 +1,38 @@
+
+* {
+  font-family:arial;
+
+}
+.myBox {
+  border: 2px solid grey;
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  margin: 2px 2px 5px 10px;
+  padding: 2px;
+  background-color: white;
+}
+button {
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+.redSel{
+  background-color: hsl(0, 79%, 73%);
+}
+.blueSel{
+  background-color: lightblue;
+}
+.greenSel{
+  background-color: hsl(95, 60%, 64%);
+}
+.purpleSel{
+  background-color: hsl(261, 60%, 64%);
+}
+input, select{
+  background: transparent;
+  border: transparent;
+}
+.output {
+  border: 2px solid grey;
+}

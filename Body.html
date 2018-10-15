@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onchange=idTest()>
+  <div class = 'myBox' id=0>0
+    <button  onclick = 'newTaskBox(parentNode.id)'> + </button>
+    <select name="color_scheme" id="color_scheme" onchange="changeColour(parentNode.id, value)">
+      <option selected="selected"></option>
+      <option value = 'red' class = 'redSel'></option>
+      <option value = 'blue' class = 'blueSel'></option>
+      <option value = 'green' class = 'greenSel'></option>
+      <option value = 'purple' class = 'purpleSel'></option>
+    </select>
+    <input>
+  </div>
+<div class = 'output'>
+  <input id='idTestInput' class = 'output' oninput=idTest()>
+  <a id='idTestOutput'> </a>
+</div>
+
+</body>
+
+<!--
+
+<select name="color_scheme" id="color_scheme">
+  <option selected="selected">Default</option>
+  <option>Black</option>
+  <option>Blue</option>
+  <option>Brown</option>
+  <option>Green</option>
+  <option>Gray</option>
+  <option>Lime</option>
+  <option>Orange</option>
+</select>
+<span class="Default">Some text here</span>
+
+
+<form action="/action_page.php">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+      function myFunction(test) {
+        var element = document.createElement("div");
+        element.setAttribute("id", "5");
+        element.setAttribute("class", "mybox Laser");
+        element.appendChild(document.createTextNode('The man who mistook his wife for a hat'));
+        document.getElementById(test.id).appendChild(element);
+        var buttonelement = document.createElement("button");
+        buttonelement.appendChild(document.createTextNode('+'));
+        document.getElementById(test.id).appendChild(buttonelement);
+    }
+    </script>
+  </head>
+  <body>
+  <div class = "mybox BOM"><button id="1" onclick="myFunction(this)">+</button> BoM
+    <div class = "mybox BOM"><button id="2"onclick="myFunction(this)">+</button> BoM
+      <div class = "mybox Laser"><button id="3" onclick="myFunction(this)">+</button> Laser</div>
+      <div class = "mybox Laser"><button id="4" onclick="myFunction(this)">+</button> Laser</div>
+    </div>
+  </div>
+  </body>
+
+</html>
+-->
+<!--kinda works
+need to add new element to id's parent, and add new botton to that element
+-->
